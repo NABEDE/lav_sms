@@ -2,6 +2,7 @@
 @section('page_title', 'My Dashboard')
 @section('content')
 
+<h4 class="text-bold text-white">{{ $app_name }}</h4>  <!-- Ajoutez cette ligne pour afficher le nom de l'application -->
     @if(Qs::userIsTeamSA())
        <div class="row">
            <div class="col-sm-6 col-xl-3">

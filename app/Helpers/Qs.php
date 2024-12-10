@@ -275,7 +275,7 @@ class Qs
 
     public static function getSystemName()
     {
-        return self::getSetting('system_name');
+        return 'OQTECH';
     }
 
     public static function findMyChildren($parent_id)

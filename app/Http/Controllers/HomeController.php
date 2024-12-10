@@ -41,6 +41,8 @@ class HomeController extends Controller
         if(Qs::userIsTeamSAT()){
             $d['users'] = $this->user->getAll();
         }
+        // Ajoutez le nom de l'application aux données
+       $d['app_name'] = config('app.name');
 
         return view('pages.support_team.dashboard', $d);
     }
